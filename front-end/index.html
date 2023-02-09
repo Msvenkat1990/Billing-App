@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REC FOUNDERY</title>
+    <link rel="stylesheet" href="/front-end/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script
+    src="https://kit.fontawesome.com/c50248ff4f.js"
+    crossorigin="anonymous"
+  ></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Crimson+Text&family=Fira+Sans&family=Flow+Circular&family=Hind:wght@500&family=Kenia&family=Nerko+One&family=Nunito&family=Oswald&family=Roboto&family=Roboto+Condensed&family=Roboto+Mono:ital,wght@1,300&family=Roboto+Slab&family=Rubik&family=Rubik+80s+Fade&family=Rubik+Gemstones&family=Rubik+Storm&family=Rubik+Vinyl&family=Sofia+Sans+Extra+Condensed:ital,wght@0,500;1,500&family=Source+Sans+Pro&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Login page start -->
+    <div class="loginPage">
+    <section class="login">
+            <img src="/front-end/Image/a6293678847a37096d355a124496c769.jpg" alt="image"class="image">
+        <div class="loginForm">
+            <h1>REC FOUNDERY</h1>
+           <form action="" id="form">
+            <label for="" class="userName">Username</label>
+            <input type="text" id="userName">
+            <small>welecome</small>
+            <label for="" class="password">Password</label>
+            <input type="password" id="password">
+            <small>welecome</small>
+            <button class="logButton">Login</button>
+            <span class="loginStatus">welecome</span>
+           </form>
+        </div>
+    </section>
+</div>
+ <!-- Login page end -->
+
+ <!-- Billing form start -->
+<div class="billingPage">
+    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+    <input type="search" class="searchInput" placeholder="search billNo">
+    <i class="fa-solid fa-square-plus" id="plus"></i>
+    <div class="full-bill" id="full-bill">
+      <header>
+        <img src="/front-end/Image/Ganesh-log.jpg" alt="image" />
+        <address>
+          <h1>REC FOUNDRY</h1>
+          <p>MFRS.OF:PUMP SPARES</p>
+          <p>H.O:13-D,COSMATFAN FOUNDRY CLUSTER III,MANICKAMPALAYAM,</p>
+          <p>COIMBATORE - 641107.CELL:9842210202,9842810209</p>
+          <p>BRANCH:S.F.NO.18/2K.K.NAGAR,BHARATHI NAGAR-4TH STREET</p>
+          <p>EXTN,GANAPATHY,</p>
+          <p>COIMBATORE-641006.</p>
+        </address>
+      </header>
+      <span contenteditable class="gstin">GSTIN:33AGIPR9804RIZK</span>
+      <article>
+        <div>
+          <p style="margin-left: 10px;">Address</p>
+        <address contenteditable class="custmer_address">
+          SSP Engineering Industries,
+          205-I Elango Nager,
+          Avaram Palayam,
+          Coimbatore.
+          Coimbatore.
+        </address>
+        <span>GST NO<p contenteditable class="custmer_gtsno">33CBWPP1299MIZP</p></span>
+      </div>
+        <aside>
+          <span class="invoice">INVOICE</span>
+          <span class="no-and-date">
+            <p>BILL NO:<span contenteditable class="billNo">5</span></p>
+            <p>DATE: <span contenteditable class="date"></span></p>
+          </span>
+        </aside>
+      </article>
+      <section>
+        <span class="despatch">
+          <p>Despatchthrough</p>
+          <p class="to">To</p>
+        </span>
+        <table class="meta">
+          <thead>
+            <tr>
+              <th><span contenteditable="false" class="no">No</span></th>
+              <th>
+                <span contenteditable="false" class="particulars"
+                  >Particulars</span
+                >
+              </th>
+              <th>
+                <span contenteditable="false" class="hsn-code">HSN Code</span>
+              </th>
+              <th>
+                <span contenteditable="false" class="quantity">Quantity</span>
+              </th>
+              <th><span contenteditable="false" class="rate">Rate</span></th>
+              <th><span contenteditable="false" class="per">Per</span></th>
+              <th>
+                <span contenteditable="false" class="amount">Amount</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="items-row">
+              <td><span contenteditable class="no item-data product" id="serialNo"></span></td>
+              <td>
+            
+                <span contenteditable id="item-particulars" class="particulars item-data product"></span> 
+                <ul id="dropDownList" class="list">
+                   
+                </ul>
+             
+              </td>
+              <td><span contenteditable id="item-hsn-code" class="hsn-code item-data product"></span></td>
+              <td><span contenteditable id="item-quantity" class="quantity item-data product"></span></td>
+              <td><span contenteditable id="item-price"  class="rate item-data"></span></td>
+              <td><span contenteditable id="item-per" class="per item-data product"></span></td>
+              <td class="row-total"><span contenteditable id="item-amount" class="amount item-data product"></span></td>
+              <td><i class="fa-solid fa-square-minus" id="minus"></i></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="bank-details">
+            <span class="no"></span>
+            <span class="bankDetails">
+              <p>Bank Name : KARUR VYSYA</p>
+              <p>Bank Branch : GANAPATHY</p>
+              <p>A/C No :1270135000012564</p>
+              <p>IFS Code : KVBL0001270</p>
+              <p>E-mail :recfoundry@gmail.com</p>
+            </span>
+            <span class="gstDetails">
+              <p>Sale Value</p>
+              <p>Discount@<span contenteditable class="discount">0</span>%</p>
+              <p>Taxable Amount</p>
+              <p>CGST@9%</p>
+              <p>SGST@9%</p>
+              <p style="color: red">
+                <span>GST AMOUNT: </span>
+                <span class="totalGst"></span>0</p>
+            </span>
+            <span class="totalAmount">
+              <div class="div1">
+                <p class="salesValue">0.00</p>
+                <p class="percentageValue">0.00</p>
+              </div>
+              <div class="div2">
+                <p class="cgst">0.00</p>
+                <p class="sgst">0.00</p>
+              </div>
+            </span>
+          </div>
+        </section>
+        <footer>
+            <span class="amounts-of-words"> </span>
+            <span class="amounts-of-label"> BILL AMOUNT </span>
+        
+            <p class="amounts-of-total">0.00</p>
+         
+          </footer>
+          <footer class="footer">
+            <span class="bussiness-terms">Business Terms: Goods once sold will not be taken back. <br>
+            Please pay by A/C draft or cheque
+            </span>
+            <span class="for-bill">
+              FOR REC FOUNDRY
+            </span>
+          </footer>
+        </div>
+        <div class="actions">
+          <button class="reset-button">Reset</button>
+          <button class="add-button">Add Particulars</button>
+          <button class="create-button">Create Bill</button>
+          <button class="print-button" onclick="printDiv('full-bill')">Print</button>
+          <button class="logout-button">Logout</button>
+        </div>
+
+</div>
+<!-- Billing form end -->
+
+<!-- Add itemlist form start -->
+<div class="add-item-form">
+  <form action="">
+        <h1>Add Item</h1>
+        <label for="" class="addParticulers">Particulers</label>
+        <input type="text" id="addParticulers">
+        <label for="" class="addHsnCode">Hsncode</label>
+        <input type="text" id="addHsnCode">
+        <label for="" class="addPrice">Price</label>
+        <input type="text" id="addPrice">
+        <div>
+        <button class="returnButton">Return to bill</button>
+        <button class="addItemButton">Submit</button>
+        <button class="logoutButton">Logout</button>
+      </div>
+        <span class="submitStatus">welecome</span>
+    </form>
+</div>
+<!-- Add itemlist form end -->
+
+    <script src="/front-end/script.js"></script>
+</body>
+</html
